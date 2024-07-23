@@ -1,0 +1,23 @@
+.feature-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  line-height: 30px;
+}
+
+.feature-title {
+  color: #333;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.feature-list {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.feature-list li {
+  margin-bottom: 5px;
+}

@@ -1,0 +1,166 @@
+.taskCard-container {
+  width: 300px;
+  height: 200px;
+  background-color: #fff;
+  /* border: 2px solid black; */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  border-radius: 10px;
+  perspective: 1000px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  position: relative;
+}
+
+.taskCard-front,
+.taskCard-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  transition: transform 0.6s;
+}
+
+.taskCard-front {
+  background-color: #ffd60a;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.taskCard-back {
+  background-color: #ffd60a;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  transform: rotateY(180deg);
+  padding-left: 10px;
+  width: 100%;
+}
+
+.taskCard-container.isEditing .taskCard-front {
+  transform: rotateY(180deg);
+}
+
+.taskCard-container.isEditing .taskCard-back {
+  transform: rotateY(0deg);
+}
+
+.taskCard-buttonSection {
+  min-width: 100%;
+  display: flex;
+  gap: 20px;
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  align-items: center;
+  justify-content: flex-end;
+  padding: 10px;
+  margin-top: 50px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  transition: margin-top 0.5s ease;
+  position: absolute;
+  /* z-index: 1; */
+  margin-top: 200px;
+}
+
+.taskCard-buttonSection > button {
+  font-size: 16px;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: rgba(30, 232, 23, 0.7);
+  border: none;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+  color: white;
+}
+.taskCard-buttonSection > button:last-child {
+  background-color: rgba(232, 93, 23, 0.7);
+  margin-right: 20px;
+}
+
+.taskCard-buttonSection > button:hover {
+  background-color: rgba(13, 1, 1, 0.9);
+}
+
+.taskCard-container:hover .taskCard-buttonSection {
+  margin-top: 150px;
+}
+
+.taskCard-title-ParentBox {
+  max-width: 100%;
+  height: fit-content;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  font-size: 20px;
+  font-weight: bold;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.taskCard-title {
+  max-width: 250px;
+}
+
+.taskCard-titleCheckboxBox {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+}
+
+.taskCard-titleCheckbox {
+  width: 50px;
+  height: 50px;
+  background-color: #ffd60a;
+}
+
+.taskCard-description {
+  max-width: 100%;
+  overflow-y: hidden;
+  min-height: 100px;
+  padding: 0px 10px;
+  width: 100%;
+  max-height: 3em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.taskCard-back > input,
+textarea {
+  max-width: calc(100% - 30px);
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.taskCard-back-SelectMenu {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+  align-items: center;
+}
+
+.taskCard-back > button {
+  padding: 5px 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  max-width: calc(100% - 20px);
+}
+
+.taskCard-back > button:hover {
+  background-color: #45a049;
+}

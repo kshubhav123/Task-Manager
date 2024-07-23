@@ -1,0 +1,7 @@
+.badge-container {
+  padding: 2px 10px;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: white;
+}

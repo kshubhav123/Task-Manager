@@ -1,0 +1,177 @@
+.task-container {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(to top left, #ff3300 0%, #ff6666 100%);
+  display: flex;
+}
+
+.task-leftChild {
+  width: 320px;
+  min-height: 90vh;
+  background: linear-gradient(to top right, #ff3300 0%, #ff6666 100%);
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.task-userSection {
+  width: 300px;
+  height: fit-content;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: white;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-family: "outfit";
+  font-size: 25px;
+}
+
+.task-userImage {
+  width: 50px;
+  height: 50px;
+  border: 2px solid white;
+  border-radius: 50%;
+  margin-left: 10px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  color: black;
+}
+.task-userImage > img {
+  width: 100%;
+}
+
+
+.task-searchSection {
+  width: 15rem;
+  height: fit-content;
+  color: white;
+  font-size: 30px;
+  padding: 7px;
+  border-bottom: 1px solid black;
+  font-weight: bold;
+  margin-left: 1rem;
+}
+
+.task-searchBar {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 25px;
+  color: white;
+}
+
+.task-searchBar::placeholder {
+  color: white; 
+  opacity: 1; 
+  font-family: "outfit";
+}
+
+/* Task button */
+.task-addNewTaskButton {
+  font-size: 15px;
+  padding: 1.0rem;
+  margin-left: 1.2rem;
+  padding-right: 1.2rem;
+  padding-left: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+  border: 0;
+  font-family: 'outfit';
+  letter-spacing: 0.2rem;
+  border-radius: 1rem;
+  box-shadow: 0 8px 32px 0 rgb(0,0,0);
+  background: linear-gradient(to right, #000000 0%, #080808 100%);  
+}
+
+/* sort section */
+.task-sortSection {
+  max-width: 100%;
+  font-size: 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.task-sortHeading {
+  max-width: 100%;
+  height: fit-content;
+  color: white;
+  background: linear-gradient(to right, #000000 0%, #080808 100%);  
+  padding: 10px 20px;
+  font-family: 'outfit';
+  letter-spacing: 0.2rem;
+  border-bottom: #000000;
+  font-weight: bold;
+}
+
+.task-sortByBox {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  font-family: "outfit";
+  letter-spacing: 0.1rem;
+  margin-left: 0.2rem;
+  
+}
+
+.task-checkbox {
+  width: 15px;
+  height: 15px;
+  border: 2px solid #4CAF50; /* Green border */
+  border-radius: 50%; /* Make it circular */
+  background-color: white; /* White background */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: all 0.3s ease; /* Smooth transition */
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 0.48rem;
+}
+
+/* task-rightChild */
+
+.task-rightChild {
+  max-width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(to top right, #ff3300 0%, #ff6666 100%);
+  width: 100%;
+}
+
+.task-rightChild-cards {
+  height: fit-content;
+  display: flex;
+  font-family: "outfit";
+  letter-spacing: 0.3rem;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 20px;
+  background-color: rgba(233, 0, 0, 0.164);
+}
+
+.task-rightChild-cards-emptycard {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 5rem;
+}
+
+.task-rightChild-cards-emptycard > p {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.task-rightChild-cards-emptycard > img {
+  width: 250px;
+}
