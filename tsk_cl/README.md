@@ -50,12 +50,3 @@ To run this project locally, follow these steps:
 ## Deployment
 
 The Task Manager App is deployed on Vercel. You can access it [here](https://task-manager-frontend-flame.vercel.app/).
-
-## Screenshots
-
-![1](https://github.com/divyam751/task-manager/assets/125983433/0355b37c-35c8-45af-9e5d-7ab20a6e5b48)
-![2](https://github.com/divyam751/task-manager/assets/125983433/2afa3048-9957-4314-b467-6f412a21913e)
-![3](https://github.com/divyam751/task-manager/assets/125983433/3c11c710-250e-4061-b6f5-645ba542f1b1)
-![4](https://github.com/divyam751/task-manager/assets/125983433/f378eb12-2574-44d1-a729-65ac734ac077)
-![5](https://github.com/divyam751/task-manager/assets/125983433/b867dd82-6542-4eb7-83c5-d6f6eef7b3da)
-
