@@ -46,7 +46,3 @@ To run this project locally, follow these steps:
    ```
 
 5. Open your browser and go to `http://localhost:3000` to view the app.
-
-## Deployment
-
-The Task Manager App is deployed on Vercel. You can access it [here](https://task-manager-frontend-flame.vercel.app/).
